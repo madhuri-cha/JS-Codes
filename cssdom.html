@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "fdiv" style = "background-color: aqua; padding : 2rem">
+        first div
+        <p id ="fpara" class = "firstclass secdivclass" style = "background-color: rgb(255, 0, 85); padding : 2rem">
+            first para
+        </p>
+        <div id = "sdiv" style = "background-color: rgb(98, 0, 255); padding : 2rem" >
+            second div inside first div.
+            <p id = "spara" style = "background-color: palevioletred; padding : 2rem">Second para</p>
+        </div>
+    </div>
+</body>
+
+<!--
+
+ change background-color 
+ get 
+ paraelement.style.backgroundColor
+ set
+paraelement.style.backgroundColor = "yellow";
+
+
+//get
+let secelement = document.getElementById("sdiv");
+//setting multiple properties at a time
+secelement.style.cssText = "background-color : black; color : white;
+padding : 1rem"; 
+
+//setattributes : for adding id, class, seeting attributes 
+let firstelement = document.querySelector("#fdiv");
+firstelement.setAttribute('class', 'divclass');
+firstelement.setAttribute('class', 'secdivclass');
+
+
+firstelement.setAttribute('style', 'padding : 3rem');
+firstelement.setAttribute('style', 'background-color : black');
+
+
+//classname : getting class name, multiple class can add, getting class list 
+replace existing class
+//get
+let fpara = $0
+fpara.className
+
+//set
+fpara.className = "gokul bulbul";
+
+//classList : we can
+add, remove, toggle, contains
+**add
+fpara.classList.add('thirdclass');
+**remove
+fpara.classList.remove('firstclass');
+**toggle
+if present then return false and remove that class
+
+fpara.classList.toggle('secdivclass');
+false
+fpara.classList
+DOMTokenList(2) ['thirdclass', 'secclass', value: 'thirdclass secclass']
+if absent then return true and add that class
+
+fpara.classList.toggle('secclass');
+true
+fpara.classList
+DOMTokenList(3) ['secdivclass', 'thirdclass', 'secclass', value: 'secdivclass thirdclass secclass']
+
+
+//contains : check class present or not
+
+
+-->
+</html>

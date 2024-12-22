@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p id = "fpara">Helloooooooooooooo</p>
+        <p id ="para">Madhuri</p>
+        <a id = "fanchor" href = "https://www.google.com">click</a>
+        <script src = "event.js">
+
+            //Default Action :
+//anchor tag 
+let anchorTag = document.getElementById('fanchor')
+anchorTag.addEventListener('click', function(event){
+    //preventing default behaviour
+    event.preventDefault();
+    anchorTag.textContent = "Click done"
+});     
+</script>
+
+    </div>
+</body>
+</html>

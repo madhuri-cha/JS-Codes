@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "fpara">First para</p>
+    <h1 class = "classname">Heading</h1>
+    <div>
+        hell
+        <div id = "mydiv">
+            <p>First</p>
+            <h1>h1</h1>
+            <p>sec</p>
+        </div>
+    </div>
+    <div>
+        <p>This is text
+            <span>
+                Text
+            </span>
+        </p>
+        <p>Para</p>
+    </div>
+
+</body>
+</html>
+\
+<!--
+<h1 class=​"classname">​Heading​</h1>​
+1)Access
+
+document.getElementById("fpara")
+document.getElementsByClassName("classname")
+document.getElementsByTagName("classname")
+
+**********only first occurrence will displayed
+access
+document.querySelector('#fpara')
+document.querySelector('.classname')
+document.querySelectorAll('.classname')
+
+
+$0 : retrived all tags
+
+
+2)Now update:
+innerHtml
+outerHtml
+textContent
+innerText
+
+innerText : is use to display only that text which
+is render on browser. hide content not able to display.
+
+textContent : print the text as it is
+
+let button = $0; particular tag will assign just by click on tag from browser 
+
+button.innerHtml  //all inner tags are retrived
+button.innerHtml = <p>"heyyy"</p>  //we add in button tag
+
+Add element
+: append child , at first create a child 
+1)creation
+let fHead = document.careteElement('h1');
+fhead.textContent = "My name is madhu ";
+
+2) now add child of body tag
+let bodyTag = document.querySelector('body')
+bodyTag.appendChild(fHead)
+
+at the end child is add by default
+3) mydiv.insertAdjacentElement("beforebegin, newElement")
+beforebegin, afterbegin, beforeend, afterend
+at any position you can add child in parent tag
+
+
+
+-->
+
